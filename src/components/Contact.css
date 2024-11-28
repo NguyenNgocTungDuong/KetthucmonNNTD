@@ -1,0 +1,48 @@
+/* Contact.css */
+
+/* Bố cục chung cho trang Liên Hệ */
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+.contact-header h2 {
+  font-size: 36px;
+  color: #2a3d66;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact-description {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Thông báo khi gửi form thành công */
+.thank-you-message {
+  text-align: center;
+  font-size: 18px;
+  color: #28a745; /* Màu xanh lá khi thành công */
+}
+
+/* Responsive: Điều chỉnh cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-header h2 {
+    font-size: 28px;
+  }
+
+  .contact-description {
+    font-size: 16px;
+  }
+}

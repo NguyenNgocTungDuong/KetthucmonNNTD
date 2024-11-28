@@ -1,0 +1,67 @@
+/* About.css */
+
+/* Tổng thể trang */
+.about-container {
+  font-family: "Arial", sans-serif;
+  padding: 40px;
+  background-color: #f4f4f4;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề chính */
+.about-header h2 {
+  font-size: 36px;
+  color: #2a3d66; /* Màu sắc mạnh mẽ, dễ nhìn */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Phụ đề */
+.about-subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* Nội dung chính */
+.about-content {
+  line-height: 1.8;
+  font-size: 18px;
+  color: #333;
+  text-align: justify; /* Căn đều chữ cho dễ đọc */
+  margin-bottom: 30px;
+}
+
+/* Phần lề dưới cùng */
+.about-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Hiệu ứng cho các đoạn văn bản khi hover */
+.about-content p:hover {
+  color: #ff6347; /* Chuyển màu khi di chuột vào */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Responsive design cho thiết bị di động */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-header h2 {
+    font-size: 28px;
+  }
+
+  .about-content {
+    font-size: 16px;
+  }
+}

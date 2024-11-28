@@ -1,0 +1,151 @@
+/* Home.css */
+
+/* Tổng thể container */
+.home-container {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f7fc;
+}
+
+/* Phần hero (phần chào mừng) */
+.hero {
+  background-color: #82b1ff;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero .btn-discover {
+  background-color: #ff6f61;
+  color: white;
+  font-size: 18px;
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero .btn-discover:hover {
+  background-color: #e34f4b;
+  transform: scale(1.05);
+}
+
+/* Phần giới thiệu lý do chọn cửa hàng */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+  margin-top: -40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-section h3 {
+  font-size: 34px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-section li {
+  font-size: 18px;
+  color: #666;
+  font-weight: 500;
+  padding: 15px 25px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-section li:hover {
+  background-color: #ffecdb;
+  transform: translateY(-5px);
+}
+
+/* Thiết lập kiểu dáng responsive */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero .btn-discover {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+
+  .about-section h3 {
+    font-size: 28px;
+  }
+
+  .about-section ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-section li {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+/* Home.css */
+.hero {
+  background-image: url("https://cdn.tgdd.vn/2021/11/CookDish/cac-loai-do-gia-dung-hien-dai-cho-can-bep-nha-ban-them-tien-avt-1200x676.jpg");
+  background-size: 500; /* Make sure the image covers the section */
+  background-position: center; /* Center the image */
+  height: 600px; /* Increase the height to make the image larger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color to contrast against the image */
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container {
+  padding: 20px;
+}
+
+/* Button styling for discover link */
+.btn-discover {
+  background-color: #f4a261;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.about-section {
+  margin-top: 30px;
+}

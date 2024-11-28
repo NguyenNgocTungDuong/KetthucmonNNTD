@@ -1,0 +1,64 @@
+/* Header.css */
+
+/* Cải tiến tổng thể layout */
+.header {
+  background-color: #333; /* Màu nền của header */
+  color: white; /* Màu chữ */
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  display: flex;
+  justify-content: space-between; /* Căn giữa nội dung */
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho header */
+}
+
+/* Căn chỉnh tiêu đề */
+.logo-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Cải tiến menu navigation */
+nav ul {
+  display: flex;
+  list-style-type: none; /* Loại bỏ dấu chấm của list */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Khoảng cách giữa các mục */
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none; /* Loại bỏ gạch dưới của liên kết */
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển màu và phóng to */
+}
+
+.nav-item:hover {
+  color: #ff6347; /* Màu khi hover (màu đỏ nhạt) */
+  transform: scale(1.1); /* Hiệu ứng phóng to */
+}
+
+/* Tạo khoảng cách cho header trên mobile */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Căn giữa các phần tử theo chiều dọc */
+    text-align: center; /* Căn giữa chữ */
+  }
+
+  .logo-container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Sắp xếp các mục menu theo chiều dọc */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Khoảng cách giữa các mục */
+  }
+}
